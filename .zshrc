@@ -1,6 +1,8 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+unsetopt correct_all
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -28,6 +30,7 @@ ZSH_THEME="gc"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
 
 alias cls="clear"
 alias "cd..=cd ..".
