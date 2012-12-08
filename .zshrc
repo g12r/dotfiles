@@ -6,7 +6,7 @@ plugins=(git rails ruby)
 source $ZSH/oh-my-zsh.sh
 
 alias cls="clear"
-alias "cd..=cd ..".
+alias cd..="cd .."
 
 alias push="git push origin master"
 alias pull="git pull origin master"
