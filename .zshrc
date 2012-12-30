@@ -10,8 +10,8 @@ source $ZSH/oh-my-zsh.sh
 alias cls="clear"
 alias cd..="cd .."
 alias edit="subl"
-alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE"
-alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE"
+alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
+alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
 
 alias push="git push origin master"
 alias pull="git pull origin master"
