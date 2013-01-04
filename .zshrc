@@ -21,10 +21,28 @@ alias c="git commit -m "
 alias be="bundle exec"
 alias bi="bundle install"
 
-alias vd="vd.sh"
-alias vu="vu.sh"
-alias vs="vagrant ssh"
-alias vrecycle="vd && vu"
+alias vssh="vagrant ssh"
+
+alias func='v cycle'
+func() {
+	vagrant destroy && vagrant up
+}
+
+alias func='v d'
+func() {
+	vagrant destroy
+}
+
+alias func='v reup'
+func() {
+	vagrant up
+}
+
+alias func='v up'
+func() {
+	vagrant up --no-provision
+}
+
 
 #export RBENV_VERSION=1.9.3-p327
 unsetopt CORRECT_ALL
