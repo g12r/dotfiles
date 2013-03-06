@@ -21,6 +21,8 @@ alias pull="git pull origin master"
 alias add="git add ."
 alias c="git commit -m "
 
+alias showfinder="sudo killall -KILL appleeventsd"
+
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
 export PATH="$HOME/.rbenv/bin:$PATH"
