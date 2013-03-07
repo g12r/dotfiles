@@ -21,7 +21,14 @@ alias pull="git pull origin master"
 alias add="git add ."
 alias c="git commit -m "
 
+alias l="ls -lrt"
+
 alias showfinder="sudo killall -KILL appleeventsd"
+
+function lt() { ls -ltrsa "$@" | tail; }
+#function l() { ls -lrt "$@" }
+function psgrep() { ps -clx | grep -v grep | grep "$@" -i --color=auto; }
+function fname() { find . -iname "*$@*"; }
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
