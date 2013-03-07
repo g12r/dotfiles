@@ -23,7 +23,7 @@ alias c="git commit -m "
 
 alias showfinder="sudo killall -KILL appleeventsd"
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
 export NODE_PATH="/usr/local/lib/node"
 export PATH="$PATH:/usr/local/share/npm/bin"
