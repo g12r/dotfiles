@@ -21,7 +21,7 @@ alias pull="git pull origin master"
 alias add="git add ."
 alias c="git commit -m "
 
-export RBENV_VERSION=1.9.3-p327
+export RBENV_VERSION=1.9.3-p362
 unsetopt CORRECT_ALL
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
