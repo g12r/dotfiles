@@ -21,13 +21,22 @@ alias pull="git pull origin master"
 alias add="git add ."
 alias c="git commit -m "
 
+alias l="ls -lrt"
+
+alias showfinder="sudo killall -KILL appleeventsd"
+
+function c() { git commit -am '$@' }
+function lt() { ls -ltrsa "$@" | tail; }
+function psgrep() { ps -clx | grep -v grep | grep "$@" -i --color=auto; }
+function fname() { find . -iname "*$@*"; }
+
 export RBENV_VERSION=1.9.3-p362
-unsetopt CORRECT_ALL
-
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-
 export NODE_PATH="/usr/local/lib/node"
-export PATH="$PATH:/usr/local/share/npm/bin"
 
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
+
 eval "$(rbenv init -)"
+
+unsetopt CORRECT_ALL

@@ -1,9 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="gc"
-<<<<<<< HEAD
-
-=======
->>>>>>> bf58378d8981d484d79be8b250793df213c511f3
 plugins=(git rails ruby)
 
 source $ZSH/oh-my-zsh.sh
@@ -11,17 +7,11 @@ source $ZSH/oh-my-zsh.sh
 alias cd..="cd .."
 
 alias edit="subl"
-<<<<<<< HEAD
-
-alias editrc="subl ~/.dotfiles/.zshrc"
-alias reloadrc="~/.dotfiles/relink.sh && source ~/.zshrc"
-=======
 alias g="git"
 alias v="vagrant"
 alias up="vagrant up --no-provision"
 alias be="bundle exec"
 alias bi="bundle install"
->>>>>>> bf58378d8981d484d79be8b250793df213c511f3
 
 alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
 alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
@@ -31,19 +21,27 @@ alias pull="git pull origin master"
 alias add="git add ."
 alias c="git commit -m "
 
+<<<<<<< HEAD
+export RBENV_VERSION=1.9.3-p362
+unsetopt CORRECT_ALL
+=======
+alias l="ls -lrt"
+
+alias showfinder="sudo killall -KILL appleeventsd"
+
+function lt() { ls -ltrsa "$@" | tail; }
+#function l() { ls -lrt "$@" }
+function psgrep() { ps -clx | grep -v grep | grep "$@" -i --color=auto; }
+function fname() { find . -iname "*$@*"; }
+>>>>>>> ea4b212953325cbb90036f315087055b60bacbff
+
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
-<<<<<<< HEAD
-export RBENV_VERSION=1.9.3-p327
-=======
+export NODE_PATH="/usr/local/lib/node"
+export PATH="$PATH:/usr/local/share/npm/bin"
+
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 #export RBENV_VERSION=1.9.3-p327
->>>>>>> bf58378d8981d484d79be8b250793df213c511f3
 unsetopt CORRECT_ALL
-
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
-
-export NODE_PATH="/usr/local/lib/node"
-export PATH="$PATH:/usr/local/share/npm/bin"
