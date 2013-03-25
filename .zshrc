@@ -5,24 +5,18 @@ plugins=(git rails ruby)
 source $ZSH/oh-my-zsh.sh
 
 alias cd..="cd .."
-
+alias l="ls -lrt"
 alias edit="subl"
-alias g="git"
 alias v="vagrant"
-alias up="vagrant up --no-provision"
 alias be="bundle exec"
 alias bi="bundle install"
 
-alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
-alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
-
+alias g="git"
 alias push="git push origin master"
 alias pull="git pull origin master"
-alias add="git add ."
-alias c="git commit -m "
 
-alias l="ls -lrt"
-
+alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
+alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
 alias showfinder="sudo killall -KILL appleeventsd"
 
 function c() { git commit -am '$@' }
