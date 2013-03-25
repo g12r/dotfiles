@@ -20,6 +20,7 @@ alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall
 alias showfinder="sudo killall -KILL appleeventsd"
 
 function c() { git commit -am '$@' }
+function p() { git commit -am '$@'; push; }
 function lt() { ls -ltrsa "$@" | tail; }
 function psgrep() { ps -clx | grep -v grep | grep "$@" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
