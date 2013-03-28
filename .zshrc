@@ -25,7 +25,6 @@ function lt() { ls -ltrsa "$@" | tail; }
 function psgrep() { ps -clx | grep -v grep | grep "$@" -i --color=auto; }
 function fname() { find . -iname "*$@*"; }
 
-export RBENV_VERSION=2.0.0-p0
 export NODE_PATH="/usr/local/lib/node"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
@@ -35,3 +34,5 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 unsetopt CORRECT_ALL
+
+export RBENV_VERSION=1.9.3-p392
