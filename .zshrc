@@ -35,4 +35,4 @@ eval "$(rbenv init -)"
 
 unsetopt CORRECT_ALL
 
-export RBENV_VERSION=1.9.3-p392
+export RBENV_VERSION="1.9.3-p392"
