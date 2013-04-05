@@ -40,3 +40,6 @@ eval "$(rbenv init -)"
 
 #export RBENV_VERSION=1.9.3-p327
 unsetopt CORRECT_ALL
+
+source ~/.zshrc_local
+
