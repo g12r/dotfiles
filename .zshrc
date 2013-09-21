@@ -31,9 +31,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 export PATH="$PATH:/usr/local/share/npm/bin"
 export PATH="$HOME/.rbenv/bin:$PATH"
 
+# old rbenv override, removed to use global
+# export RBENV_VERSION="1.9.3-p392"
+
 eval "$(rbenv init -)"
 
 unsetopt CORRECT_ALL
-
-# old rbenv override, removed to use global
-# export RBENV_VERSION="1.9.3-p392"
