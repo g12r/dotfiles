@@ -35,4 +35,5 @@ eval "$(rbenv init -)"
 
 unsetopt CORRECT_ALL
 
-#export RBENV_VERSION="1.9.3-p392"
+# old rbenv override, removed to use global
+# export RBENV_VERSION="1.9.3-p392"
