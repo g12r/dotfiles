@@ -10,10 +10,7 @@ alias edit="subl"
 alias v="vagrant"
 alias be="bundle exec"
 alias bi="bundle install"
-
 alias g="git"
-alias push="git push origin master"
-alias pull="git pull origin master"
 
 alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
 alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
@@ -28,11 +25,11 @@ function fname() { find . -iname "*$@*"; }
 export NODE_PATH="/usr/local/lib/node"
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
-export PATH="$PATH:/usr/local/share/npm/bin"
-export PATH="$HOME/.rbenv/bin:$PATH"
+#export PATH="$PATH:/usr/local/share/npm/bin"
 
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 unsetopt CORRECT_ALL
 
-export RBENV_VERSION="1.9.3-p392"
+export RBENV_VERSION="2.0.0-rc2"
