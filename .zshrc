@@ -18,6 +18,7 @@ alias pull="git pull origin master"
 alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall Finder"
 alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
 alias showfinder="sudo killall -KILL appleeventsd"
+alias del_dsstore="find . -name '*.DS_Store' -type f -delete"
 
 function c() { git commit -am '$@' }
 function p() { git commit -am '$@'; push; }
