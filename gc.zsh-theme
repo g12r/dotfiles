@@ -8,8 +8,8 @@ function _prompt_char() {
   fi
 }
 
-PROMPT='%{%f%k%b%}
-%{%K{black}%F{green}%}%n%{%F{blue}%}@%{%F{cyan}%}%m%{%F{green}%} %{%b%F{yellow}%K{black}%}%~%{%F{green}%} $(git_prompt_info)%E%{%f%k%b%}
-%{%K{black}%}%{%K{black}%}$%{%f%k%b%} '
+PROMPT='
+%{$fg_bold[yellow]%}%n%{$fg_bold[magenta]%}@%{$fg[cyan]%}%m%{$reset_color%} %{$fg_bold[yellow]%}%~%{$reset_color%} %{$fg[gray]%}$(git_prompt_info)%E%{$reset_color%}
+%{$fg[magenta]%}$%{$reset_color%} '
 
 RPROMPT='!%{%B%F{cyan}%}%!%{%f%k%b%}'
