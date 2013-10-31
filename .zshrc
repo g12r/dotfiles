@@ -17,6 +17,7 @@ alias ga='git add -A'
 alias gpush="git push origin master"
 alias gpull="git pull origin master"
 alias gc="git commit -am"
+alias gcu="git commit -am 'Synching...'"
 
 function grm { git rm $(git ls-files -d); }
 #function gc() { git commit -am "$@" }
