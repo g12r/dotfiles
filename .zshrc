@@ -13,7 +13,7 @@ alias bi="bundle install"
 
 alias g="git"
 alias gs='git status --short'
-alias ga='git add -A'
+alias ga='git add -A :/'
 alias gpush="git push origin master"
 alias gpull="git pull origin master"
 alias gc="git commit -am"
