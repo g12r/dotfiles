@@ -19,6 +19,9 @@ alias gpull="git pull origin master"
 alias gc="git commit -am"
 alias gcu="git commit -am 'Synching...'"
 
+alias rs="rails s"
+alias birs="bi & rs"
+
 function grm { git rm $(git ls-files -d); }
 #function gc() { git commit -am "$@" }
 function gcp() { git commit -am "$@"; push; }
