@@ -22,6 +22,8 @@ alias gcu="git commit -am 'Synching...'"
 alias rs="rails s"
 alias birs="bi & rs"
 
+function dash() { open dash://"$@"; }
+
 function grm { git rm $(git ls-files -d); }
 #function gc() { git commit -am "$@" }
 function gcp() { git commit -am "$@"; push; }
