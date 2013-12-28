@@ -5,6 +5,14 @@ plugins=(git rails ruby)
 source $ZSH/oh-my-zsh.sh
 
 source ~/.dotfiles/afn_sh
+alias gpush="git push origin master"
+alias gpull="git pull origin master"
+alias gc="git commit -am"
+alias gcu="git commit -am 'Synching...'"
+
+alias rs="rails s"
+alias birs="bi & rs"
+
 source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_osx
