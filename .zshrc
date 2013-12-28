@@ -24,6 +24,9 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 #eval "$(rbenv init -)"
 #export RBENV_VERSION="2.0.0-rc2"
 
+source /usr/local/share/chruby/chruby.sh
+source /usr/local/share/chruby/auto.sh
+
 unsetopt CORRECT_ALL
 clear
 
