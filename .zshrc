@@ -13,10 +13,10 @@ source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 
-if [ "`uname -a | grep Ubuntu`" ]; then
+if uname -a | egrep -q "Ubuntu"; then
 	echo Configuring Ubuntu
 	# nothing yet
-elif ["`uname -a | grep Darwin`" ]; then
+elif uname -a | egrep -q "Darwin"; then
   echo Configuring OSX
 	source ~/.dotfiles/afn_osx
 else
@@ -35,5 +35,5 @@ fi
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-clear
+#clear
 
