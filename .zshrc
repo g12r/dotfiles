@@ -33,8 +33,9 @@ fi
 
 # chruby
 source /usr/local/share/chruby/chruby.sh
+# set via...
+# echo "ruby-1.9" > ~/.ruby-version
 source /usr/local/share/chruby/auto.sh
-chruby ruby-2.0
 
 #clear
 
