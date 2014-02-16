@@ -1,32 +1,39 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="gc"
-plugins=(git rails ruby)
 
 source $ZSH/oh-my-zsh.sh
 
+# oh-my-zsh
+plugins=(git rails ruby)
+DISABLE_CORRECTION="true"
+unsetopt CORRECT_ALL
+
 source ~/.dotfiles/afn_sh
-alias gpush="git push origin master"
-alias gpull="git pull origin master"
-alias gc="git commit -am"
-alias gcu="git commit -am 'Synching...'"
-
-alias rs="rails s"
-alias birs="bi & rs"
-
 source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
-source ~/.dotfiles/afn_osx
 source ~/.dotfiles/afn_misc
+
+if [ "`uname -a | grep Ubuntu`" ]; then
+	echo Configuring Ubuntu
+	# nothing yet
+elif ["`uname -a | grep Darwin`" ]; then
+  echo Configuring OSX
+	source ~/.dotfiles/afn_osx
+else
+  echo Configuring Generic
+  # nothing yet
+fi
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-#export RBENV_VERSION="2.0.0-rc2"
+# add conditional path to vagrant instances
+if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
+	export PATH="$PATH:/opt/vagrant_ruby/bin"
+fi
 
+# chruby
 source /usr/local/share/chruby/chruby.sh
 source /usr/local/share/chruby/auto.sh
 
-unsetopt CORRECT_ALL
 clear
 

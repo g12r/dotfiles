@@ -4,3 +4,5 @@ alias bi="bundle install"
 alias rs="rails s"
 alias rdbm="rake db:migrate"
 alias rt="rake spec"
+
+alias birs="bi & rs"
