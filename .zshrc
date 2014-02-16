@@ -14,13 +14,13 @@ source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 
 if uname -a | egrep -q "Ubuntu"; then
-	echo Configuring for Ubuntu
+	echo "Configuring for Ubuntu"
 	# nothing yet
 elif uname -a | egrep -q "Darwin"; then
-  echo Configuring for OSX
+  echo "Configuring for OSX"
 	source ~/.dotfiles/afn_osx
 else
-  echo Configuring for generic
+  echo "Configuring for generic"
   # nothing yet
 fi
 
