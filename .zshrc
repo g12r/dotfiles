@@ -15,13 +15,14 @@ source ~/.dotfiles/afn_misc
 
 if uname -a | egrep -q "Ubuntu"; then
 	echo "Configuring for Ubuntu"
-	# nothing yet
+	export EDITOR='vim'
 elif uname -a | egrep -q "Darwin"; then
   echo "Configuring for OSX"
 	source ~/.dotfiles/afn_osx
+	export EDITOR='subl'
 else
   echo "Configuring for generic"
-  # nothing yet
+  export EDITOR='vim'
 fi
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
