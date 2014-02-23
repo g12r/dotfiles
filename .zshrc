@@ -14,14 +14,14 @@ source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 
 if uname -a | egrep -q "Ubuntu"; then
-	echo "Configuring for Ubuntu"
+	# echo "Configuring for Ubuntu"
 	export EDITOR='vim'
 elif uname -a | egrep -q "Darwin"; then
-  echo "Configuring for OSX"
+  # echo "Configuring for OSX"
 	source ~/.dotfiles/afn_osx
 	export EDITOR='subl'
 else
-  echo "Configuring for generic"
+  # echo "Configuring for generic"
   export EDITOR='vim'
 fi
 
