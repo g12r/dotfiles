@@ -13,6 +13,10 @@ else
   ZSH_THEME="gc_rhel"
 fi
 
+if [[ -d "/etc/redhat-release" && ! -L "/etc/redhat-release" ]]; then
+	echo RHEL!!!
+fi
+
 ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
