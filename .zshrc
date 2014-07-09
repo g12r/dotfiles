@@ -1,6 +1,19 @@
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="gc_rhel"
+if uname -a | egrep -q "Ubuntu"; then
+	# echo "Configuring for Ubuntu"
+	export EDITOR='vim'
+	ZSH_THEME="gc"
+elif uname -a | egrep -q "Darwin"; then
+  # echo "Configuring for OSX"
+	source ~/.dotfiles/afn_osx
+	export EDITOR='subl'
+	ZSH_THEME="gc"
+else
+  # echo "Configuring for generic"
+  export EDITOR='vim'
+  ZSH_THEME="gc_rhel"
+fi
 
+ZSH=$HOME/.oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 # oh-my-zsh
@@ -12,18 +25,6 @@ source ~/.dotfiles/afn_sh
 source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
-
-if uname -a | egrep -q "Ubuntu"; then
-	# echo "Configuring for Ubuntu"
-	export EDITOR='vim'
-elif uname -a | egrep -q "Darwin"; then
-  # echo "Configuring for OSX"
-	source ~/.dotfiles/afn_osx
-	export EDITOR='subl'
-else
-  # echo "Configuring for generic"
-  export EDITOR='vim'
-fi
 
 export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
