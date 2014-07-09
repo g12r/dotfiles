@@ -1,3 +1,5 @@
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+
 if uname -a | egrep -q "Ubuntu"; then
 	# echo "Configuring for Ubuntu"
 	export EDITOR='vim'
@@ -10,11 +12,13 @@ elif uname -a | egrep -q "Darwin"; then
 else
   # echo "Configuring for generic"
   export EDITOR='vim'
-  ZSH_THEME="gc_rhel"
+  ZSH_THEME="gc"
 fi
 
-if [[ -d "/etc/redhat-release" && ! -L "/etc/redhat-release" ]]; then
-	echo RHEL!!!
+# is RHEL?
+if ls /etc/redhat-release &> /dev/null; then
+	ZSH_THEME="gc_rhel"
+	source ~/.dotfiles/devshrc
 fi
 
 ZSH=$HOME/.oh-my-zsh
@@ -29,8 +33,6 @@ source ~/.dotfiles/afn_sh
 source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
-
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
 
 # add conditional path to vagrant instances
 if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
