@@ -1,6 +1,6 @@
 # GC dev-desktop shell
 
-export PATH=/apollo/env/eclipse-3.7/bin:/apollo/env/OdinTools/bin:/apollo/env/BrazilThirdPartyTool/bin:$PATH
+export PATH=/apollo/env/SDETools/bin/:/apollo/env/eclipse-3.7/bin:/apollo/env/OdinTools/bin:/apollo/env/BrazilThirdPartyTool/bin:$PATH
 alias eclipse="eclipse &"
 
 # ART Config
