@@ -1,26 +1,7 @@
-export TERM=xterm-256color
+# GC dev-desktop shell
 
-ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="gc_rhel"
-plugins=(git rails ruby)
-
-source $ZSH/oh-my-zsh.sh
-
-alias cls="clear"
-alias cd..="cd .."
-alias edit="subl"
-alias g="git"
-
-# source ~/.zsh/git-prompt/zshrc.sh
-# export PROMPT=$PROMPT (git_super_status) %#
-
-
-alias br='LD_LIBRARY_PATH=$(brazil-path run.lib) /apollo/env/SDETools/bin/brazil-runtime-exec'
-
-unsetopt CORRECT_ALL
-
-alias eclipse="eclipse &"
 export PATH=/apollo/env/eclipse-3.7/bin:/apollo/env/OdinTools/bin:$PATH
+alias eclipse="eclipse &"
 
 # ART Config
 # https://w.amazon.com/index.php/ART/Team/NewTeamMembers#Your_First_.28and_probably_Second.29_Week
@@ -32,6 +13,7 @@ alias ad='sudo /apollo/bin/runCommand -a Deactivate -e'
 # brazil shortcuts
 alias bb='brazil-build'
 alias bba='brazil-build apollo-pkg'
+alias br='LD_LIBRARY_PATH=$(brazil-path run.lib) /apollo/env/SDETools/bin/brazil-runtime-exec'
 
 # bark shortcuts
 alias artdoclog='bark -cf=/home/$USER/.bark_mrt -FetchLogs -OwnerEmail=art-aws@amazon.com -LogGroupName=AmazonRecruitingTechnologies/DocumentGeneration/Prod/ArtDocumentGeneration.log -p /home/$USER/bark/artdoclog'
@@ -78,5 +60,3 @@ function odin-ak
     echo "\nPrivate Key: "
     echo `/usr/bin/curl $PRIVATE_KEY_URL 2>&1 | tr '{},' '\n\n\n' | sed -n 's/"materialData":"\(.*\)"/\1/p' | base64 -di | /apollo/env/envImprovement/bin/openssl pkcs8 -nocrypt -inform DER`
 }
-
-clear
