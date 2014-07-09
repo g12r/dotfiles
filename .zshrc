@@ -1,5 +1,5 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="gc"
+ZSH_THEME="gc_rhel"
 
 source $ZSH/oh-my-zsh.sh
 
