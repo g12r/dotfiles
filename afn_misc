@@ -1,0 +1,5 @@
+alias v="vagrant"
+alias mb="mux base"
+alias t="tmux"
+alias tcb="tmux kill-session -t base"
+alias c="clear"
