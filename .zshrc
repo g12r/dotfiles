@@ -25,7 +25,7 @@ else
   export EDITOR='vim'
 fi
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin"
+export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/usr/local/share/npm/bin"
 
 # add conditional path to vagrant instances
 if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
