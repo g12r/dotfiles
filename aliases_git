@@ -7,4 +7,4 @@ alias gc="git commit -am"
 alias gcu="git commit -m 'Synching...'"
 
 function grm { git rm $(git ls-files -d); }
-function gcpush() { git commit -m "$@"; git push origin master; }
+function gcpush() { git commit -m "$@"; git status; }
