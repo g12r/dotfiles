@@ -11,3 +11,4 @@ function tk { tmux kill-session -t $1 }
 function ta {	(tmux ls | grep -vq attached && tmux -CC at) || tmux -CC }
 
 alias zrt="clear;zeus rake test"
+alias zs="clear;zeus start"
