@@ -41,11 +41,15 @@ if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
 	export PATH="$PATH:/opt/vagrant_ruby/bin"
 fi
 
+# rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 # chruby
-source /usr/local/share/chruby/chruby.sh
+# source /usr/local/share/chruby/chruby.sh
 # set via...
 # echo "ruby-1.9" > ~/.ruby-version
-source /usr/local/share/chruby/auto.sh
+# source /usr/local/share/chruby/auto.sh
 
-#clear
-
+# docker
+# echo '\neval "$(docker-machine env default)"'
