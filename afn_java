@@ -3,7 +3,11 @@ export ANT_HOME=$HOME/Code/java/ant
 #set the home for maven
 export MAVEN_HOME=$HOME/Code/java/maven
 #set the home for gradle
-export GRADLE_HOME=$home/Code/java/gradle
+export GRADLE_HOME=$HOME/Code/java/gradle
+
+#set the home for play/activator
+export ACTIVATOR_HOME=$HOME/Code/play/activator
+
 
 #creating a special home for Java 7
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
@@ -23,7 +27,7 @@ alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 #Finally put maven, ant and gradle to the system path
-export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
+export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ACTIVATOR_HOME
 
 export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0
 export PATH=$PATH:$EC2_HOME/bin
