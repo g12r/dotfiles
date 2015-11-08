@@ -53,3 +53,5 @@ eval "$(rbenv init -)"
 
 # docker
 # echo '\neval "$(docker-machine env default)"'
+
+[ -s "/Users/grant/.scm_breeze/scm_breeze.sh" ] && source "/Users/grant/.scm_breeze/scm_breeze.sh"
