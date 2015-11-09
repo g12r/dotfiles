@@ -1,9 +1,9 @@
 #set the home for ant
-export ANT_HOME=$HOME/Code/java/ant
+export ANT_HOME=$HOME/Code/java/lib/ant
 #set the home for maven
-export MAVEN_HOME=$HOME/Code/java/maven
+export MAVEN_HOME=$HOME/Code/java/lib/maven
 #set the home for gradle
-export GRADLE_HOME=$home/Code/java/gradle
+export GRADLE_HOME=$HOME/Code/java/lib/gradle
 
 #creating a special home for Java 7
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
