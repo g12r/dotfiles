@@ -35,7 +35,8 @@ alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 #Finally put maven, ant and gradle to the system path
-# export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$ACTIVATOR_HOME:$SCALA_HOME/bin
-export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin
+# @TODO - Activator
+# export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$ACTIVATOR_HOME
+export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin
 
 export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0
