@@ -16,7 +16,7 @@ export GRADLE_HOME=$HOME/Code/java/lib/gradle
 #export ACTIVATOR_HOME=$HOME/Code/play/activator
 
 #creating a special home for Java 8
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+#export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 
 #creating a special home for Java 7
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
