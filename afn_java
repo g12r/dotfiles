@@ -1,39 +1,19 @@
-# @TODO: Sync work
-# - no activator at work -> turning off in master
-# - no java6 at home (work?) -> keeping commented out
-# - ant/maven/gradle are in Code/java @ home, Code/java/lib @ work -> move to ../lib
-# - have not added scala at work -> add scala to work, uncomment
-# - master had AWS items, move out into a non tracked file
-# - scala at work is Code/java/lib, home is /usr/local/share -> move to ../lib
+export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0
 
 export ANT_HOME=$HOME/Code/java/lib/ant
 export MAVEN_HOME=$HOME/Code/java/lib/maven
 export GRADLE_HOME=$HOME/Code/java/lib/gradle
 export SCALA_HOME=$HOME/Code/java/lib/scala
 
-#set the home for play/activator
-#export ACTIVATOR_HOME=$HOME/Code/play/activator
-
-#creating a special home for Java 8
-#export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
-
-#creating a special home for Java 7
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 
-#creating a special home for Java 6
-#export JAVA_6_HOME=$(/usr/libexec/java_home -v1.6)
+# making Java7 as our default java
+export JAVA_HOME=$JAVA_7_HOME
 
-#making Java7 as our default java for the system
-export JAVA_HOME=$JAVA_8_HOME
-
-#Command line alias so we can switch java versions
-#alias java6='export JAVA_HOME=$JAVA_6_HOME'
+# aliases for switching java versions
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
-#Finally put maven, ant and gradle to the system path
-# @TODO - Activator
-# export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$ACTIVATOR_HOME
 export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin
 
-export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0

@@ -33,7 +33,6 @@ source ~/.dotfiles/afn_sh
 source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
-
 source ~/.dotfiles/afn_java
 
 # add conditional path to vagrant instances
@@ -50,9 +49,3 @@ eval "$(rbenv init -)"
 # set via...
 # echo "ruby-1.9" > ~/.ruby-version
 # source /usr/local/share/chruby/auto.sh
-
-# docker
-# echo '\neval "$(docker-machine env default)"'
-
-# @TODO -- keep or dump globally?
-# [ -s "/Users/grant/.scm_breeze/scm_breeze.sh" ] && source "/Users/grant/.scm_breeze/scm_breeze.sh"
