@@ -9,7 +9,7 @@ export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 
 # making Java7 as our default java
-export JAVA_HOME=$JAVA_7_HOME
+export JAVA_HOME=$JAVA_8_HOME
 
 # aliases for switching java versions
 alias java7='export JAVA_HOME=$JAVA_7_HOME'
