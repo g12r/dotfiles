@@ -4,6 +4,7 @@ export ANT_HOME=$HOME/Code/java/lib/ant
 export MAVEN_HOME=$HOME/Code/java/lib/maven
 export GRADLE_HOME=$HOME/Code/java/lib/gradle
 export SCALA_HOME=$HOME/Code/java/lib/scala
+# export JRUBY_HOME=$HOME/Code/java/lib/jruby
 
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
@@ -16,4 +17,5 @@ alias java7='export JAVA_HOME=$JAVA_7_HOME'
 alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
 export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin
+# export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$JRUBY_HOME/bin
 
