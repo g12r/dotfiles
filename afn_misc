@@ -12,3 +12,5 @@ function ta {	(tmux ls | grep -vq attached && tmux -CC at) || tmux -CC }
 
 alias zrt="clear;zeus rake test"
 alias zs="clear;zeus start"
+
+export AWS_REGION=us-west-2
