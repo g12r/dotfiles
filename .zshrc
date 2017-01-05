@@ -49,3 +49,4 @@ eval "$(rbenv init -)"
 # set via...
 # echo "ruby-1.9" > ~/.ruby-version
 # source /usr/local/share/chruby/auto.sh
+export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
