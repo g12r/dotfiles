@@ -2,3 +2,6 @@ alias hfshow="defaults write com.apple.Finder AppleShowAllFiles TRUE && killall 
 alias hfhide="defaults write com.apple.Finder AppleShowAllFiles FALSE && killall Finder"
 alias showfinder="sudo killall -KILL appleeventsd"
 alias del_dsstore="find . -name '*.DS_Store' -type f -delete"
+
+# homebrew
+export PATH="/usr/local/sbin:$PATH
