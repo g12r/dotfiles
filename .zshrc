@@ -49,3 +49,5 @@ eval "$(rbenv init -)"
 # set via...
 # echo "ruby-1.9" > ~/.ruby-version
 # source /usr/local/share/chruby/auto.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
