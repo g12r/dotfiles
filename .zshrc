@@ -50,4 +50,4 @@ eval "$(rbenv init -)"
 # echo "ruby-1.9" > ~/.ruby-version
 # source /usr/local/share/chruby/auto.sh
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
