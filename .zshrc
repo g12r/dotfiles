@@ -18,7 +18,7 @@ fi
 # is RHEL?
 if ls /etc/redhat-release &> /dev/null; then
 	ZSH_THEME="gc_rhel"
-	source ~/.dotfiles/devshrc
+	# source ~/.dotfiles/devshrc
 fi
 
 ZSH=$HOME/.oh-my-zsh
