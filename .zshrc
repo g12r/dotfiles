@@ -34,6 +34,7 @@ source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 source ~/.dotfiles/afn_java
+source ~/.dotfiles/afn_toolbox
 
 # add conditional path to vagrant instances
 if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
