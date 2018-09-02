@@ -31,29 +31,11 @@ unsetopt CORRECT_ALL
 
 source ~/.dotfiles/afn_sh
 source ~/.dotfiles/afn_git
-source ~/.dotfiles/afn_rails
+# source ~/.dotfiles/afn_ruby
+# source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 # source ~/.dotfiles/afn_java
 source ~/.dotfiles/afn_js
 source ~/.dotfiles/afn_toolbox
 
-# add conditional path to vagrant instances
-if [[ -d "/opt/vagrant_ruby/bin" && ! -L "/opt/vagrant_ruby/bin" ]]; then
-	export PATH="$PATH:/opt/vagrant_ruby/bin"
-fi
-
-# rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
-
-# chruby
-# source /usr/local/share/chruby/chruby.sh
-# set via...
-# echo "ruby-1.9" > ~/.ruby-version
-# source /usr/local/share/chruby/auto.sh
-
 export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
