@@ -5,3 +5,6 @@ alias del_dsstore="find . -name '*.DS_Store' -type f -delete"
 
 # homebrew
 export PATH="/usr/local/sbin:$PATH"
+
+# fixes kqueue issues
+export EVENT_NOKQUEUE=1
