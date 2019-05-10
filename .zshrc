@@ -39,3 +39,9 @@ source ~/.dotfiles/afn_js
 source ~/.dotfiles/afn_toolbox
 
 export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
+export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/grantwc/.sdkman"
+[[ -s "/Users/grantwc/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/grantwc/.sdkman/bin/sdkman-init.sh"
