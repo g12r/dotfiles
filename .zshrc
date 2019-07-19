@@ -34,7 +34,7 @@ source ~/.dotfiles/afn_git
 # source ~/.dotfiles/afn_ruby
 # source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
-# source ~/.dotfiles/afn_java
+source ~/.dotfiles/afn_java
 source ~/.dotfiles/afn_js
 source ~/.dotfiles/afn_toolbox
 

@@ -1,23 +1,24 @@
-export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0
+# export EC2_HOME=/usr/local/ec2/ec2-api-tools-1.7.5.0
 
-export ANT_HOME=$HOME/Code/java/lib/ant
-export MAVEN_HOME=$HOME/Code/java/lib/maven
-export GRADLE_HOME=$HOME/Code/java/lib/gradle
-export SCALA_HOME=$HOME/Code/java/lib/scala
-export SBT_HOME=$HOME/Code/java/lib/sbt
+# export ANT_HOME=$HOME/Code/java/lib/ant
+# export MAVEN_HOME=$HOME/Code/java/lib/maven
+# export GRADLE_HOME=$HOME/Code/java/lib/gradle
+# export SCALA_HOME=$HOME/Code/java/lib/scala
+# export SBT_HOME=$HOME/Code/java/lib/sbt
 # export JRUBY_HOME=$HOME/Code/java/lib/jruby
 
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+# export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 # export JAVA_7_HOME=$(/usr/libexec/java_home -v1.7)
 
 # making Java7 as our default java
-export JAVA_HOME=$JAVA_8_HOME
+# export JAVA_HOME=$JAVA_8_HOME
 
 # aliases for switching java versions
 # alias java7='export JAVA_HOME=$JAVA_7_HOME'
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
+# alias java8='export JAVA_HOME=$JAVA_8_HOME'
 
-export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$SBT_HOME/bin
+# export PATH=$PATH:$ANT_HOME/bin:$MAVEN_HOME/bin:$GRADLE_HOME/bin:$SCALA_HOME/bin:$SBT_HOME/bin
 
 source "$HOME/.sdkman/bin/sdkman-init.sh"
+
 
