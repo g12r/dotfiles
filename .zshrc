@@ -36,6 +36,7 @@ source ~/.dotfiles/afn_git
 source ~/.dotfiles/afn_misc
 # source ~/.dotfiles/afn_java
 source ~/.dotfiles/afn_js
+source ~/.dotfiles/afn_py
 source ~/.dotfiles/afn_toolbox
 
 export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
