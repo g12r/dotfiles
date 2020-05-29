@@ -1,7 +1,6 @@
-alias v="vagrant"
 alias mb="mux base"
-alias c="clear"
 alias s="subl"
+alias c="code"
 
 alias t="tmux"
 alias tl="tmux list-session"
@@ -9,8 +8,5 @@ alias td="tmux detach"
 function tk { tmux kill-session -t $1 }
 # function ta { tmux -CC at || tmux -CC }
 function ta {	(tmux ls | grep -vq attached && tmux -CC at) || tmux -CC }
-
-alias zrt="clear;zeus rake test"
-alias zs="clear;zeus start"
 
 export AWS_REGION=us-west-2
