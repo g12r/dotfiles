@@ -7,7 +7,7 @@ if uname -a | egrep -q "Ubuntu"; then
 elif uname -a | egrep -q "Darwin"; then
   # echo "Configuring for OSX"
 	source ~/.dotfiles/afn_osx
-	export EDITOR='subl'
+	export EDITOR='micro'
 	ZSH_THEME="gc"
 else
   # echo "Configuring for generic"
@@ -46,5 +46,5 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+# export SDKMAN_DIR="$HOME/.sdkman"
+# [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
