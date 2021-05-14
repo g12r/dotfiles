@@ -42,7 +42,8 @@ source ~/.dotfiles/afn_toolbox
 export PATH=$PATH:/usr/local/bin  # MIDWAY PATH: Path changed for ssh
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
-
 export PATH="/usr/local/opt/curl/bin:$PATH"
+export PATH="~/.local/bin:$PATH"
 
 eval $(/opt/homebrew/bin/brew shellenv)
+eval "$(pyenv init -)"
