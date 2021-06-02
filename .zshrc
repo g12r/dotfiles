@@ -45,9 +45,6 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
-<<<<<<< HEAD
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(pyenv init -)"
-=======
-# eval $(/opt/homebrew/bin/brew shellenv)
->>>>>>> 9bd48644c923ecb4ebb8d107f119ddfc19ef6a8b
+eval "$(pyenv virtualenv-init -)"
