@@ -11,3 +11,6 @@ function ta {	(tmux ls | grep -vq attached && tmux -CC at) || tmux -CC }
 
 export AWS_REGION=us-west-2
 alias knt='kinit -f -l 36000 -r 604800'
+
+export KAFKA_HOME=$HOME/Dropbox/Code/Kafka/runtime/kafka_2.13-2.8.0
+export PATH=$PATH:$KAFKA_HOME/bin
