@@ -45,7 +45,9 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
-eval $(/usr/local/bin/brew shellenv)
+eval $($HOMEBREW_PREFIX/bin/brew shellenv)
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+export KAFKA_HOME=$HOME/Dropbox/Code/Kafka/runtime/kafka_2.13-2.8.0
+export PATH=$PATH:$KAFKA_HOME/bin
