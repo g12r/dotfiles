@@ -5,7 +5,7 @@ ln -f ~/.dotfiles/.zshrc ~/.zshrc
 ln -f ~/.dotfiles/.zshenv ~/.zshenv
 
 # kitty
-ln -f ./kitty/ ~/.config/kitty/
+ln -sf ~/.dotfiles/kitty ~/.config
 
 # Inactive
 #ln -f ~/.dotfiles/.config ~/.ssh/.config

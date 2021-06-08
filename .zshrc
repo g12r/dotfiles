@@ -7,7 +7,7 @@ if uname -a | egrep -q "Ubuntu"; then
 elif uname -a | egrep -q "Darwin"; then
   # echo "Configuring for OSX"
 	source ~/.dotfiles/afn_osx
-	export EDITOR='micro'
+	export EDITOR='nvim'
 	ZSH_THEME="gc"
 else
   # echo "Configuring for generic"
@@ -18,7 +18,6 @@ fi
 # is RHEL?
 if ls /etc/redhat-release &> /dev/null; then
 	ZSH_THEME="gc_rhel"
-	# source ~/.dotfiles/devshrc
 fi
 
 ZSH=$HOME/.oh-my-zsh
@@ -31,8 +30,6 @@ unsetopt CORRECT_ALL
 
 source ~/.dotfiles/afn_sh
 source ~/.dotfiles/afn_git
-# source ~/.dotfiles/afn_ruby
-# source ~/.dotfiles/afn_rails
 source ~/.dotfiles/afn_misc
 source ~/.dotfiles/afn_java
 source ~/.dotfiles/afn_js
@@ -45,7 +42,9 @@ export CPPFLAGS="-I/usr/local/opt/llvm/include"
 export PATH="/usr/local/opt/curl/bin:$PATH"
 export PATH="~/.local/bin:$PATH"
 
+export HOMEBREW_PREFIX="/usr/local"
 eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
